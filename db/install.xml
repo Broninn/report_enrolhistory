@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="report/enrolhistory/db" VERSION="2025071000" COMMENT="Histórico de alterações de inscrição">
+  <TABLE NAME="report_enrolhistory" COMMENT="Histórico de alterações nas inscrições de alunos">
+    <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+    <FIELD NAME="userid" TYPE="int" NOTNULL="true"/>
+    <FIELD NAME="courseid" TYPE="int" NOTNULL="true"/>
+    <FIELD NAME="old_timestart" TYPE="int" NOTNULL="true"/>
+    <FIELD NAME="old_timeend" TYPE="int" NOTNULL="true"/>
+    <FIELD NAME="changedby" TYPE="int" NOTNULL="true"/>
+    <FIELD NAME="timechanged" TYPE="int" NOTNULL="true"/>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+  </TABLE>
+</XMLDB>
